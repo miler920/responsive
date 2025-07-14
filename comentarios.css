@@ -1,0 +1,156 @@
+/* Estilo general del formulario de comentarios */
+.comentario-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estrellas */
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.stars input[type="radio"] {
+  display: none;
+}
+
+.stars label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: gold;
+}
+
+/* Textarea y botón */
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+  padding: 0.7rem 1.5rem;
+  background: #0d6efd;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #0056b3;
+}
+
+/* Comentarios recientes */
+.comentarios-lista #comentarios {
+  margin-top: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.comentario-item {
+  margin-bottom: 1.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #ccc;
+}
+
+.comentario-item .estrella {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+/* Estadísticas */
+.estadisticas {
+  margin-top: 2rem;
+}
+
+.barra {
+  height: 20px;
+  background-color: gold;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.barra-container {
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 4px 0;
+}
+/* comentarios.css */
+.comentario-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  font-size: 2rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+  color: gold;
+}
+
+.estadisticas, .comentarios-lista {
+  margin-top: 2rem;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.comentario-item {
+  background: #fff;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-left: 5px solid #4caf50;
+  border-radius: 4px;
+}
+
+
+
+.eliminar-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.eliminar-btn:hover {
+  background-color: #c0392b;
+}

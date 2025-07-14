@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Boleta de Pago - Academia de Fútbol Miler</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="boleta.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="overlay"></div>
+    <div class="logo-container">
+      <img class="logo" src="/img/ChatGPT Image 2 jun 2025, 12_32_05.png" alt="Logo de la Academia de Fútbol Miler" />
+      <h1>Academia de Fútbol Miler</h1>
+    </div>
+    <p>¡Entrena y juega como un profesional!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="#">Entrenamientos</a>
+    <a href="#">Promociones</a>
+    <a href="boleta.html">Boleta de pago</a>
+    <a href="#">Sobre Nosotros</a>
+    <a href="inscripciones.html">Inscripciones</a>
+    <a href="https://www.google.com/maps/@-10.9339537,-74.8717532,21z?entry=ttu" target="_blank">Ubicación</a>
+    <a href="comentarios.html">Déjanos tu opinión</a>
+  </nav>
+
+  <div class="comentario-container fondo-boleta">
+    <div class="overlay-fondo"></div> <!-- Superposición -->
+  
+    <!-- 🟢 Título con Logo -->
+    <div class="titulo-con-logo">
+      <img src="/img/ChatGPT Image 2 jun 2025, 12_32_05.png" alt="Logo" class="logo-titulo">
+      <h2>Academia de Fútbol Miler <br> boleta de pago</h2>
+    
+    </div>
+  
+    <p>Completa los siguientes datos para generar tu boleta de pago.</p>
+  
+    <div class="formulario">
+      <label>Cliente:</label>
+      <input type="text" id="cliente" placeholder="Nombre del cliente">
+  
+      <label>Fecha:</label>
+      <input type="date" id="fecha">
+  
+      <label>Producto:</label>
+      <select id="producto">
+        <option value="" disabled selected>Selecciona un producto</option>
+        <option value="Mensualidad|100.00">Mensualidad - S/. 100.00</option>
+        <option value="Uniforme|80.00">Uniforme - S/. 80.00</option>
+        <option value="Balón|50.00">Balón - S/. 50.00</option>
+      </select>
+  
+      <label>Cantidad:</label>
+      <input type="number" id="cantidad" min="1" value="1">
+      <button id="btnAgregar">Agregar</button>
+
+
+    </div>
+  
+    <table id="tablaProductos">
+      <thead>
+        <tr>
+          <th>Cantidad</th>
+          <th>Producto</th>
+          <th>Precio Unitario</th>
+          <th>Subtotal</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  
+    <div class="estadisticas">
+      <p><strong>Subtotal:</strong> S/. <span id="subtotal">0.00</span></p>
+      <p><strong>IGV (18%):</strong> S/. <span id="igv">0.00</span></p>
+      <p><strong>Total a Pagar:</strong> S/. <span id="total">0.00</span></p>
+      <button onclick="imprimirBoleta()">Imprimir / Exportar PDF</button>
+    </div>
+  </div>
+  
+
+  <footer>
+    <p>&copy; 2025 Academia de Fútbol Miler. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100006703455317" target="_blank"><img src="/img/facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com/academiafutbolmiler" target="_blank"><img src="/img/Instagram_logo_2022.svg" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@academiafutbolmiler" target="_blank"><img src="/img/tiktok.png" alt="TikTok"></a>
+    </div>
+  </footer>
+  
+
+  <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="/img/was.png" alt="WhatsApp">
+  </a>
+  <button id="darkModeToggle">🌙 Modo Oscuro</button>
+  <script src="boleta.js"></script>
+  
+  
+</body>
+</html>

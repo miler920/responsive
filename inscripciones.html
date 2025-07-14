@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Inscripciones - Academia de Fútbol Miler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="overlay"></div>
+        <div class="logo-container">
+            <img class="logo" src="/img/ChatGPT Image 2 jun 2025, 12_32_05.png" alt="Logo de la Academia de Fútbol Miler" />
+            <h1>Academia de Fútbol Miler</h1>
+        </div>
+        <p>¡Entrena y juega como un profesional!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Entrenamientos</a>
+        <a href="#">Promociones</a>
+        <a href="#">Galería</a>
+        <a href="#">Sobre Nosotros</a>
+        <div class="dropdown">
+            <a href="#">Contacto</a>
+            <div class="dropdown-content">
+                <a href="https://www.facebook.com/..." target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/tu_usuario" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/..." target="_blank">TikTok</a>
+            </div>
+        </div>
+        <a href="inscripciones.html">Inscripciones</a>
+        <a href="https://www.google.com/maps/@-10.9339537,-74.8717532,21z?entry=ttu" target="_blank" rel="noopener noreferrer">Ubicación</a>
+        <a href="comentarios.html">Déjanos tu opinión</a>
+
+    </nav>
+
+    <div class="container inscripcion-container">
+
+        <h2>Inscripciones</h2>
+       
+
+        <div class="section">
+            <h3>📋 Requisitos</h3>
+            <ul>
+                <li>Edad mínima: 6 años</li>
+                <li>Fotocopia del DNI del alumno y del apoderado</li>
+                <li>Certificado médico (apto para actividad física)</li>
+                <li>Ficha de inscripción completa (se entrega en la sede o se descarga desde nuestra página)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>⏰ Horarios de Entrenamiento</h3>
+            <p>
+                <span class="highlight">Lunes, Miércoles y Viernes:</span> 4:00 p.m. a 6:00 p.m.<br>
+                <span class="highlight">Sábados:</span> 9:00 a.m. a 11:00 a.m.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>💰 Costos</h3>
+            <ul>
+                <li>Matrícula: <strong>S/ 50.00</strong></li>
+                <li>Mensualidad: <strong>S/ 120.00</strong></li>
+            </ul>
+        </div>
+        <form id="inscripcionForm" action="#" method="post">
+            <h3>📝 Formulario de Inscripción</h3>
+
+            <label for="nombre">Nombre del alumno:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="6" required>
+
+            <label for="dni_alumno">DNI del alumno:</label>
+            <input type="text" id="dni_alumno" name="dni_alumno" required>
+
+            <label for="dni_apoderado">DNI del apoderado:</label>
+            <input type="text" id="dni_apoderado" name="dni_apoderado" required>
+
+            <label for="correo">Correo electrónico del apoderado:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="turno">Día preferido de entrenamiento:</label>
+            <select id="turno" name="turno">
+                <option value="lunes-miercoles-viernes">Lunes, Miércoles y Viernes</option>
+                <option value="sabado">Sábado</option>
+            </select>
+
+            <input type="submit" value="Enviar Inscripción">
+        </form>
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Academia de Fútbol Miler. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100006703455317" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <img src="/img/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://instagram.com/academiafutbolmiler" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <img src="/img/Instagram_logo_2022.svg" alt="Instagram" />
+            </a>
+            <a href="https://www.tiktok.com/@academiafutbolmiler" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                <img src="/img/tiktok.png" alt="TikTok" />
+            </a>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <img src="/img/was.png" alt="WhatsApp">
+    </a>
+
+    
+    <script>
+        document.getElementById('inscripcionForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // evita el envío real
+          alert("¡Gracias por inscribirte! Nos pondremos en contacto pronto.");
+          this.reset();
+        });
+        </script>   
+<button id="darkModeToggle">🌙 Modo Oscuro</button>
+    <script src="inscripciones.js"></script>
+</body>
+</html>

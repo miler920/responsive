@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Opiniones - Academia de Fútbol Miler</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="comentarios.css  ">
+  
+   
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="overlay"></div>
+    <div class="logo-container">
+      <img class="logo" src="/img/ChatGPT Image 2 jun 2025, 12_32_05.png" alt="Logo de la Academia de Fútbol Miler" />
+      <h1>Academia de Fútbol Miler</h1>
+    </div>
+    <p>¡Entrena y juega como un profesional!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="#">Entrenamientos</a>
+    <a href="#">Promociones</a>
+    <a href="boleta.html">Goleta de pago</a>
+    <a href="#">Sobre Nosotros</a>
+    <a href="inscripciones.html">Inscripciones</a>
+    <a href="https://www.google.com/maps/@-10.9339537,-74.8717532,21z?entry=ttu" target="_blank">Ubicación</a>
+    <a href="comentarios.html">Déjanos tu opinión</a>
+  </nav>
+
+  <div class="comentario-container">
+    <h2>⭐ Déjanos tu Opinión</h2>
+    <p>Tu opinión nos ayuda a mejorar. Califica nuestra academia y déjanos tus comentarios.</p>
+
+    <form id="comentarioForm">
+      <label>Tu calificación:</label>
+      <div class="stars">
+        <input type="radio" id="estrella5" name="estrella" value="5" required><label for="estrella5">★</label>
+        <input type="radio" id="estrella4" name="estrella" value="4"><label for="estrella4">★</label>
+        <input type="radio" id="estrella3" name="estrella" value="3"><label for="estrella3">★</label>
+        <input type="radio" id="estrella2" name="estrella" value="2"><label for="estrella2">★</label>
+        <input type="radio" id="estrella1" name="estrella" value="1"><label for="estrella1">★</label>
+      </div>
+
+      <label for="comentario">Comentario:</label><br>
+      <textarea id="comentario" name="comentario" required></textarea><br>
+
+      <input type="submit" value="Enviar Opinión">
+    </form>
+
+    <div class="estadisticas">
+      <h3>📊 Estadísticas de Calificación</h3>
+      <div id="estadisticas"></div>
+    </div>
+
+    <div class="comentarios-lista">
+      <h3>🗣 Comentarios Recientes</h3>
+      <div id="comentarios"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Academia de Fútbol Miler. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=100006703455317" target="_blank"><img src="/img/facebook.png" alt="Facebook"></a>
+      <a href="https://instagram.com/academiafutbolmiler" target="_blank"><img src="/img/Instagram_logo_2022.svg" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@academiafutbolmiler" target="_blank"><img src="/img/tiktok.png" alt="TikTok"></a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/51999999999" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="/img/was.png" alt="WhatsApp">
+  </a>
+  <button id="darkModeToggle">🌙 Modo Oscuro</button>
+  <script src="comentarios.js"></script>
+</body>
+</html>

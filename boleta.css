@@ -1,0 +1,97 @@
+¡/* Fondo personalizado */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('/img/fondo-boleta.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .fondo-boleta {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    color: #333;
+  }
+  
+  .titulo-con-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .logo-titulo {
+    width: 70px;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formulario input,
+  .formulario select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #0069d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #004ba0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .estadisticas p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+  
+  /* 🌙 Modo oscuro */
+  .dark-mode {
+    background: #111;
+    color: #eee;
+  }
+  
+  .dark-mode .fondo-boleta {
+    background-color: #222;
+    color: #eee;
+  }
+  
+  .dark-mode input,
+  .dark-mode select {
+    background-color: #444;
+    color: white;
+    border: 1px solid #666;
+  }
+  
